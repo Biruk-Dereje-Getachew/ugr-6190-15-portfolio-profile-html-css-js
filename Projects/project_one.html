@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project One</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar__menu-list">
+          <li class="navbar__menu-list__item"><a href="/../home.html">Home</a></li>
+          <li class="navbar__menu-list__item"><a href="/../about_me.html">About me</a></li>
+          <li class="navbar__menu-list__item"><a href="/../skills.html">Skills</a></li>
+          <li class="navbar__menu-list__item"><a href="/../projects.html">Projects</a></li>
+          <li class="navbar__menu-list__item"><a href="/../contact_me.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="/../projects.html"><img src="/../src/images/back.png" alt="Back to Projects" /></a>
+    <section class="project-description">
+      <h1 class="main-header">Conway's Game of Life</h1>
+      <div class="project-description__passage">
+        <p>
+          <strong>Conway's Game of Life</strong>, often simply referred to as "The Game of Life," is a cellular
+          automaton devised by British mathematician John Horton Conway in 1970. It is a zero-player game, meaning its
+          evolution is determined by its initial state and proceeds without further input from players. The game is
+          played on a grid of cells, where each cell can be in one of two states: alive or dead. The grid can be any
+          size, and the cells evolve over discrete time steps according to a set of rules that are simple but capable of
+          producing highly complex and unpredictable patterns.
+        </p>
+
+        <h3>Rules of the Game</h3>
+        <p>
+          The Game of Life operates on a grid, typically rectangular or square, where each cell interacts with its eight
+          neighbors (adjacent cells, both horizontally, vertically, and diagonally). The rules for the evolution of the
+          grid are based on the number of neighbors a cell has:
+        </p>
+        <ul>
+          <li>
+            <strong>Survival:</strong> Any live cell with two or three live neighbors remains alive in the next
+            generation.
+          </li>
+          <li>
+            <strong>Death:</strong> Any live cell with fewer than two live neighbors dies (underpopulation), or with
+            more than three live neighbors, it dies (overpopulation).
+          </li>
+          <li>
+            <strong>Birth:</strong> Any dead cell with exactly three live neighbors becomes alive in the next generation
+            (reproduction).
+          </li>
+        </ul>
+
+        <h3>Patterns and Behavior</h3>
+        <p>
+          These rules are applied simultaneously to all cells in the grid, and they can lead to the creation of complex
+          structures and behaviors over time. Some patterns stabilize, while others oscillate or even move across the
+          grid. For example, a "blinker" is a simple oscillator, and a "glider" is a pattern that moves across the grid.
+          The Game of Life has been studied extensively and is known for its ability to produce a wide variety of
+          emergent phenomena, such as self-replicating patterns and seemingly random behaviors, all stemming from simple
+          rules.
+        </p>
+
+        <h3>Mathematical and Computational Significance</h3>
+        <p>
+          What makes Conway's Game of Life particularly fascinating is its connection to both mathematics and computer
+          science. The game has been used as a tool for exploring chaos theory, artificial life, and complexity science.
+          It is also notable for its ability to simulate aspects of computation. The Game of Life is Turing-complete,
+          meaning that, in theory, it is capable of performing any computation that a conventional computer can, given
+          the right initial conditions. This insight has made the Game of Life a key topic in the study of cellular
+          automata and computational theory.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+          Overall, Conway's Game of Life is a stunning example of how simple rules can generate rich and complex
+          patterns, making it a significant model in the fields of mathematics, computer science, and theoretical
+          biology. It has also become a cultural touchstone in the world of recreational mathematics, inspiring numerous
+          variations and implementations in art, literature, and technology.
+        </p>
+        <p>
+          View my implementation on
+          <a target="_blank" href="https://github.com/Biruk-Dereje-Getachew/Conways-Game-of-Life">GitHub</a>.
+        </p>
+      </div>
+    </section>
+    <hr class="line-break" />
+
+    <section class="technologies-used">
+      <h2 class="secondary-header">Technologies Used</h2>
+      <ol class="technologies-used__list">
+        <li class="technologies-used__list__item">HTML</li>
+        <li class="technologies-used__list__item">CSS</li>
+        <li class="technologies-used__list__item">JavaScript</li>
+      </ol>
+    </section>
+    <hr class="line-break" />
+
+    <section class="project-demo">
+      <h2 class="secondary-header">Project Demo</h2>
+      <video src="/../src/videos/project-one.mp4" autoplay controls></video>
+    </section>
+    <hr class="line-break" />
+    <footer>
+      <p class="footer-text">
+        Thank you for visiting my portfolio! I’m excited to share my journey as a student and aspiring software
+        developer. Feel free to explore my projects, learn more about my skills, and get a glimpse of the work I'm
+        passionate about. If you'd like to connect, discuss a potential project, or just have a friendly chat about
+        tech, don't hesitate to reach out through my <a href="contact_me.html">Contact Page</a>. <br /><br />
+        I’m always learning and growing, and I’d love to connect with others who share a similar enthusiasm for coding
+        and technology.<br />
+        © 2024 Biruk Dereje Getachew. All rights reserved.
+      </p>
+      <nav class="navbar">
+        <ul class="navbar__menu-list">
+          <li class="navbar__menu-list__item"><a href="/../home.html">Home</a></li>
+          <li class="navbar__menu-list__item"><a href="/../about_me.html">About me</a></li>
+          <li class="navbar__menu-list__item"><a href="/../skills.html">Skills</a></li>
+          <li class="navbar__menu-list__item"><a href="/../projects.html">Projects</a></li>
+          <li class="navbar__menu-list__item"><a href="/../contact_me.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Two</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar__menu-list">
+          <li class="navbar__menu-list__item"><a href="/../home.html">Home</a></li>
+          <li class="navbar__menu-list__item"><a href="/../about_me.html">About me</a></li>
+          <li class="navbar__menu-list__item"><a href="/../skills.html">Skills</a></li>
+          <li class="navbar__menu-list__item"><a href="/../projects.html">Projects</a></li>
+          <li class="navbar__menu-list__item"><a href="/../contact_me.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <a href="/../projects.html"><img src="/../src/images/back.png" alt="Back to Projects" /></a>
+    <section class="project-description">
+      <h1 class="main-header">Lorenz's Attractor</h1>
+      <div class="project-description__passage">
+        <p>
+          <strong>The Lorenz Attractor</strong> is a set of chaotic solutions to a system of three differential
+          equations first introduced by Edward Lorenz in 1963. This mathematical model describes the behavior of a
+          simplified weather system and has since become one of the most famous examples of deterministic chaos. The
+          Lorenz Attractor is visually represented as a three-dimensional trajectory that resembles a butterfly or
+          figure-eight pattern. Despite being governed by deterministic equations, the Lorenz system exhibits extreme
+          sensitivity to initial conditions, which is a hallmark of chaotic systems.
+        </p>
+
+        <h3>The Mathematical Model</h3>
+        <p>
+          The Lorenz system consists of three coupled, non-linear differential equations that describe the rate of
+          change of three variables—usually denoted as <em>x</em>, <em>y</em>, and <em>z</em>—over time. These variables
+          can represent physical quantities such as convection in fluids, with parameters controlling aspects like the
+          intensity of the system. The equations are:
+        </p>
+        <ul>
+          <li>
+            <strong>dx/dt = σ(y - x):</strong> Describes the rate of change in the x-direction based on the difference
+            between x and y, with σ representing the Prandtl number.
+          </li>
+          <li>
+            <strong>dy/dt = x(ρ - z) - y:</strong> Represents the rate of change in the y-direction, influenced by both
+            x and z, with ρ being the Rayleigh number.
+          </li>
+          <li>
+            <strong>dz/dt = xy - βz:</strong> Models the change in the z-direction, with β determining the dissipation
+            of the system.
+          </li>
+        </ul>
+        <p>
+          With specific parameter values—such as σ = 10, ρ = 28, and β = 8/3—the system produces the iconic chaotic
+          "butterfly" attractor, a structure that never repeats but remains confined to a finite space.
+        </p>
+
+        <h3>Significance and Chaos Theory</h3>
+        <p>
+          The Lorenz Attractor is a cornerstone in the field of chaos theory, illustrating how simple deterministic
+          systems can lead to complex and unpredictable behavior. Its sensitivity to initial conditions is often
+          described as the "butterfly effect," where small differences in starting points can lead to drastically
+          different outcomes. This concept has profound implications in fields like weather prediction, fluid dynamics,
+          and even economics, where systems are influenced by multiple interdependent variables.
+        </p>
+        <p>
+          The attractor has also inspired researchers and artists alike, due to its elegant structure and chaotic
+          nature. In scientific research, it provides insights into non-linear dynamics and systems with unpredictable
+          yet bounded behavior. In the visual arts, it serves as a fascinating example of how mathematical equations can
+          create intricate and mesmerizing patterns.
+        </p>
+
+        <h3>Conclusion</h3>
+        <p>
+          The Lorenz Attractor is more than a mathematical curiosity—it is a symbol of the beauty and complexity that
+          can arise from chaos. Its discovery marked a turning point in our understanding of deterministic systems and
+          their unpredictable behaviors. Today, it remains a widely studied phenomenon, bridging the gap between
+          science, mathematics, and art.
+        </p>
+      </div>
+    </section>
+    <hr class="line-break" />
+
+    <section class="technologies-used">
+      <h2 class="secondary-header">Technologies Used</h2>
+      <ol class="technologies-used__list">
+        <li class="technologies-used__list__item">HTML</li>
+        <li class="technologies-used__list__item">CSS</li>
+        <li class="technologies-used__list__item">JavaScript</li>
+      </ol>
+    </section>
+    <hr class="line-break" />
+
+    <section class="project-demo">
+      <h2 class="secondary-header">Project Demo</h2>
+      <video src="/../src/videos/project-two.mp4" autoplay controls></video>
+    </section>
+    <hr class="line-break" />
+
+    <footer>
+      <p class="footer-text">
+        Thank you for visiting my portfolio! I’m excited to share my journey as a student and aspiring software
+        developer. Feel free to explore my projects, learn more about my skills, and get a glimpse of the work I'm
+        passionate about. If you'd like to connect, discuss a potential project, or just have a friendly chat about
+        tech, don't hesitate to reach out through my <a href="contact_me.html">Contact Page</a>. <br /><br />
+        I’m always learning and growing, and I’d love to connect with others who share a similar enthusiasm for coding
+        and technology.<br />
+        © 2024 Biruk Dereje Getachew. All rights reserved.
+      </p>
+      <nav class="navbar">
+        <ul class="navbar__menu-list">
+          <li class="navbar__menu-list__item"><a href="/../home.html">Home</a></li>
+          <li class="navbar__menu-list__item"><a href="/../about_me.html">About me</a></li>
+          <li class="navbar__menu-list__item"><a href="/../skills.html">Skills</a></li>
+          <li class="navbar__menu-list__item"><a href="/../projects.html">Projects</a></li>
+          <li class="navbar__menu-list__item"><a href="/../contact_me.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
