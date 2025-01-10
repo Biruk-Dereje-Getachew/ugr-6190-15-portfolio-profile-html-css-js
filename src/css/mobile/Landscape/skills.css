@@ -1,0 +1,90 @@
+body {
+   padding-left: calc(var(--spacing-4) * 4);
+   padding-right: calc(var(--spacing-4) * 4);
+}
+
+.skills-main {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-3);
+   align-items: center;
+}
+
+.line-break {
+   width: 100%;
+}
+
+.skills-article {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+   align-items: center;
+}
+
+.secondary-header {
+   align-self: start;
+}
+
+.technical-skills-section__list {
+   list-style-type: none;
+   counter-reset: list-counter;
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+}
+
+.technical-skills-section__list__item {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+   margin: 0 var(--spacing-2);
+   border-radius: var(--spacing-1);
+
+   /* Drop shadow */
+   background-color: var(--background);
+   overflow: hidden;
+   filter: drop-shadow(0px 0px 10px white);
+}
+.technical-skills-section__list__item *:not(:first-child) {
+   padding: 0 var(--spacing-1);
+   padding-bottom: var(--spacing-2);
+}
+.technical-skills-section__list__item h4 {
+   counter-increment: list-counter;
+}
+.technical-skills-section__list__item h4::before {
+   content: counter(list-counter) ". ";
+}
+
+.soft-skills-section__list {
+   list-style-type: none;
+   counter-reset: list-counter;
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+}
+
+.soft-skills-section__list__item {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+   margin: 0 var(--spacing-2);
+   margin-bottom: var(--spacing-2);
+   border-radius: var(--spacing-1);
+
+   /* Drop shadow */
+   background-color: var(--background);
+   overflow: hidden;
+   filter: drop-shadow(0px 0px 10px white);
+}
+.soft-skills-section__list__item *:not(:first-child) {
+   padding: 0 var(--spacing-1);
+   padding-bottom: var(--spacing-2);
+}
+
+.soft-skills-section__list__item h4 {
+   counter-increment: list-counter;
+}
+.soft-skills-section__list__item h4::before {
+   content: counter(list-counter) ". ";
+}
