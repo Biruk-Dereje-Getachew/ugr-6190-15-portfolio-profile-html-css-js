@@ -1,0 +1,25 @@
+.skills-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: var(--spacing-3);
+}
+
+.cta-to-skills {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+   /* justify-content: center; */
+}
+
+.skills-snippet {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-1);
+}
+
+.skills-snippet ol {
+   display: flex;
+   flex-direction: column;
+   line-height: 30px;
+}

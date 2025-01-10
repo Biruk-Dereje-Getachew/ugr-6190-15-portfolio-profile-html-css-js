@@ -1,0 +1,74 @@
+.navbar {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   background-color: var(--background);
+   position: relative;
+}
+
+.navbar__menu-list {
+   display: none; /* Hidden by default */
+   list-style: none;
+   left: 0;
+   width: 100%; /* Full width for the menu */
+   background-color: var(--fill);
+   border-radius: 5px;
+   flex-direction: column;
+}
+
+.navbar__menu-list__item:not(:last-child) {
+   border-bottom: 1px solid var(--stroke-weak);
+}
+
+.navbar__menu-list__item {
+   padding: var(--spacing-1);
+   text-align: center; /* Center the menu items */
+}
+
+.navbar__menu-list__item a {
+   color: var(--text-strong);
+   text-decoration: none;
+   font-size: 18px;
+}
+
+.hamburger {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-self: flex-end;
+   /* background-color: var(--fill); */
+   margin: 10px;
+   width: 30px;
+   height: 20px;
+   z-index: 1; /* Ensure it's on top of other content */
+}
+
+.hamburger span {
+   display: block;
+   width: 30px;
+   height: 4px;
+   background-color: var(--text-strong);
+   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar.open {
+   display: flex;
+   flex-direction: column;
+}
+/* Menu is shown when navbar has the 'open' class */
+.navbar.open .navbar__menu-list {
+   display: flex;
+}
+
+/* Hamburger icon animation */
+.navbar.open .hamburger span:nth-child(1) {
+   transform: rotate(45deg) translateY(11px);
+}
+
+.navbar.open .hamburger span:nth-child(2) {
+   opacity: 0;
+}
+
+.navbar.open .hamburger span:nth-child(3) {
+   transform: rotate(-45deg) translateY(-11px);
+}
