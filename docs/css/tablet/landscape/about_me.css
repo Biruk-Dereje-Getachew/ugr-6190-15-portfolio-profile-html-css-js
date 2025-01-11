@@ -1,0 +1,22 @@
+.card {
+   display: flex;
+   flex-direction: row;
+   gap: var(--spacing-1);
+}
+
+.card:nth-child(odd) {
+   flex-direction: row-reverse;
+}
+
+.card__image {
+   display: block;
+   width: 50%;
+   height: fit-content;
+}
+
+.card__passage {
+   overflow-y: auto;
+   padding: var(--spacing-1);
+   margin: 0;
+   /* height: 50%; */
+}
