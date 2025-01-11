@@ -1,0 +1,9 @@
+.technical-skills-section__list__item *:not(:first-child) {
+   padding: 0 var(--spacing-1);
+}
+
+.technical-skills-section__list__item .technical-skills-section__list__item__left__passage,
+.technical-skills-section__list__item .technical-skills-section__list__item__right__passage {
+   padding-left: 1em;
+   padding-bottom: 2rem;
+}

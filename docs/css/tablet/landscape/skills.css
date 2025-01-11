@@ -1,0 +1,55 @@
+.technical-skills-section__list__item {
+   display: flex;
+   flex-direction: row;
+   gap: var(--spacing-1);
+   max-height: fit-content;
+   overflow: hidden;
+}
+
+.technical-skills-section__list__item__right {
+   flex-direction: row-reverse;
+}
+
+.technical-skills-section__list__item__left__image,
+.technical-skills-section__list__item__right__image {
+   display: block;
+   width: 50%;
+   height: fit-content;
+}
+
+.technical-skills-section__list__item__right__passage,
+.technical-skills-section__list__item__left__passage {
+   overflow-y: auto;
+   padding: var(--spacing-1);
+   margin: 0;
+   max-height: 30rem;
+   /* height: 50%; */
+}
+
+.soft-skills-section__list__item {
+   display: flex;
+   flex-direction: row;
+   gap: var(--spacing-1);
+   max-height: fit-content;
+   overflow: hidden;
+}
+
+.soft-skills-section__list__item__right {
+   flex-direction: row-reverse;
+}
+
+.soft-skills-section__list__item__left__image,
+.soft-skills-section__list__item__right__image {
+   display: block;
+   width: 50%;
+   height: fit-content;
+}
+
+.soft-skills-section__list__item__right__passage,
+.soft-skills-section__list__item__left__passage {
+   overflow-y: auto;
+   padding: var(--spacing-1);
+   margin: 0;
+   max-height: 30rem;
+   /* height: 50%; */
+}

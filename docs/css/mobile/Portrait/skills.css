@@ -44,10 +44,10 @@
    padding: 0 var(--spacing-1);
    padding-bottom: var(--spacing-2);
 }
-.technical-skills-section__list__item h4 {
+.technical-skills-section__list__item strong {
    counter-increment: list-counter;
 }
-.technical-skills-section__list__item h4::before {
+.technical-skills-section__list__item strong::before {
    content: counter(list-counter) ". ";
 }
 
@@ -77,9 +77,9 @@
    padding-bottom: var(--spacing-2);
 }
 
-.soft-skills-section__list__item h4 {
+.soft-skills-section__list__item strong {
    counter-increment: list-counter;
 }
-.soft-skills-section__list__item h4::before {
+.soft-skills-section__list__item strong::before {
    content: counter(list-counter) ". ";
 }
