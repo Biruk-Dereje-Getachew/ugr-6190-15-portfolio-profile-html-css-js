@@ -1,9 +1,12 @@
 /* Body styles */
 body {
-   width: 950;
+   width: 950px;
    margin: 0 auto;
 }
 
+.link-button {
+   height: fit-content;
+}
 /* Navigation styles */
 .hamburger {
    display: none;
@@ -27,6 +30,11 @@ body {
    padding: 10px 20px;
 }
 
+button[type="submit"] {
+   width: fit-content;
+   height: fit-content;
+   margin: 0 auto;
+}
 /* Footer section styling */
 
 footer {

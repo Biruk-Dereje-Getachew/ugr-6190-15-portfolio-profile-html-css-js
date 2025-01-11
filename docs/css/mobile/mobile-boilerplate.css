@@ -108,6 +108,12 @@ img {
    transition: background-color 0.3s ease; /* Add transition effect on hover */
 }
 
+button[type="submit"] {
+   width: fit-content;
+   height: fit-content;
+   margin: 0 auto;
+}
+
 .link-button:hover {
    background-color: var(--fill); /* Darker background on hover */
 }

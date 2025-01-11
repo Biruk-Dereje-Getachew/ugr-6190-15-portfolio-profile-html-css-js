@@ -22,7 +22,7 @@
    overflow-y: auto;
    padding: var(--spacing-1);
    margin: 0;
-   max-height: 30rem;
+   max-height: 40rem;
    /* height: 50%; */
 }
 

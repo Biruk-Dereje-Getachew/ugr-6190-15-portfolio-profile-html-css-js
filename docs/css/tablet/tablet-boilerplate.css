@@ -112,6 +112,12 @@ img {
    margin: 0 auto;
 }
 
+button[type="submit"] {
+   width: fit-content;
+   height: fit-content;
+   margin: 0 auto;
+}
+
 .link-button:hover {
    background-color: var(--fill); /* Darker background on hover */
 }

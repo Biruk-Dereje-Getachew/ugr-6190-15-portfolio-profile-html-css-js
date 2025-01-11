@@ -1,0 +1,44 @@
+main {
+   display: grid;
+   grid-template-columns: 3fr 3fr;
+   grid-template-areas:
+      "form header"
+      "form paragraph"
+      "form line-break1"
+      "form social-media"
+      "form line-break2";
+   justify-content: start;
+   align-content: start;
+   align-items: center;
+   justify-items: center;
+}
+
+.contact-form {
+   grid-area: form;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   height: -webkit-fill-available;
+}
+
+.contact-form .contact-form__textarea {
+   height: 40%;
+}
+
+.contact-section {
+   grid-area: paragraph;
+   height: 30rem;
+   overflow-y: auto;
+}
+
+.social-media-section {
+   grid-area: social-media;
+}
+
+.main-header {
+   grid-area: header;
+}
+
+.contact-section ~ .line-break {
+   grid-area: line-break1;
+}
