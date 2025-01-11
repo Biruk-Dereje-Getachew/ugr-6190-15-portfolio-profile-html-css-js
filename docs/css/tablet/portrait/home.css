@@ -1,17 +1,4 @@
-body {
-   width: 325px;
-   margin: 0 auto;
-}
-
 /* Hero header section styling */
-.hero-header {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: var(--spacing-3);
-   text-align: center;
-}
-
 .hero-header__image {
    width: 150px; /* Set the width of the profile image */
    height: 150px; /* Set the height of the profile image */
@@ -28,22 +15,34 @@ body {
    font-size: var(--heading-2-size);
    line-height: var(--heading-2-line-height);
    color: var(--text-strong); /* Adjust text color for contrast */
-   width: 50%;
+}
+
+.hero-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: var(--spacing-3);
+   text-align: center;
 }
 
 /* Skills section styliing */
 .skills-container {
    display: flex;
    flex-direction: column;
-   /* align-items: center; */
+   align-items: start;
    gap: var(--spacing-3);
+}
+
+.skills-container .secondary-header {
+   align-self: center;
 }
 
 .cta-to-skills {
    display: flex;
    flex-direction: column;
    gap: var(--spacing-2);
-   align-self: flex-start;
+   width: 80%;
+   margin: 0 auto;
    /* justify-content: center; */
 }
 
@@ -53,10 +52,15 @@ body {
    gap: var(--spacing-1);
 }
 
-.skills-snippet ol {
+.skills-snippet__list {
    display: flex;
    flex-direction: column;
    line-height: 30px;
+   list-style-position: inside;
+}
+
+.skills-container a {
+   align-self: center;
 }
 
 /* Project Section Styling */
@@ -97,10 +101,29 @@ body {
 
 /* Contact Section Styling */
 .cta-to-contacts {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
    gap: var(--spacing-2);
+   grid-template-areas:
+      "header header header"
+      "paragraph1 paragraph1 button"
+      "paragraph1 paragraph1 button";
+}
+
+.cta-to-contacts > h2 {
+   grid-area: header;
+   text-align: center;
+}
+
+.cta-to-contacts__paragraph-1 {
+   grid-area: paragraph1;
+   height: 20rem;
+   overflow-y: auto;
+}
+
+.cta-to-contacts > a {
+   grid-area: button;
+   justify-self: center;
 }
 
 .cta-to-contacts > p {

@@ -37,12 +37,21 @@ main {
    padding: var(--spacing-1);
    border: 1px solid var(--stroke-weak);
    border-radius: var(--spacing-1);
+   background-color: var(--background);
+   color: var(--text-weak); /* Placeholder color */
+   font-family: var(--font-family);
+   font-weight: var(--small-weight);
+   font-size: var(--small-size);
+   line-height: var(--small-line-height);
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
    color: var(--text-weak); /* Placeholder color */
-   font: inherit;
+   font-family: var(--font-family);
+   font-weight: var(--small-weight);
+   font-size: var(--small-size);
+   line-height: var(--small-line-height);
 }
 
 .contact-form textarea {
@@ -52,11 +61,17 @@ main {
 
 /* Button */
 .contact-form button {
+   display: inline-block;
    padding: 10px 20px;
    border: none;
    border-radius: var(--spacing-1);
    background-color: var(--brand-color);
    transition: background-color 0.3s ease;
+   color: var(--brand-background-text); /* Placeholder color */
+   font-family: var(--font-family);
+   font-weight: var(--body-weight);
+   font-size: var(--body-size);
+   line-height: var(--body-line-height);
 }
 
 .contact-form button:hover {
