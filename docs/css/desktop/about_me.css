@@ -1,0 +1,32 @@
+.education-section,
+.hobbies-section {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-2);
+}
+
+.card {
+   display: flex;
+   flex-direction: row;
+   gap: var(--spacing-1);
+   max-height: fit-content;
+   overflow: hidden;
+}
+
+.card:nth-child(odd) {
+   flex-direction: row-reverse;
+}
+
+.card__image {
+   display: block;
+   width: 50%;
+   height: fit-content;
+}
+
+.card__passage {
+   overflow-y: auto;
+   padding: var(--spacing-1);
+   margin: 0;
+   max-height: 30rem;
+   /* height: 50%; */
+}

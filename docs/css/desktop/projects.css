@@ -1,0 +1,39 @@
+.card:nth-child(odd) {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto auto;
+   grid-template-areas:
+      "image paragraph1"
+      "image button";
+   padding: 0;
+}
+
+.card:nth-child(even) {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: auto auto;
+   grid-template-areas:
+      "paragraph1 image"
+      "button image";
+   padding: 0;
+}
+
+.card .project-card__description {
+   text-align: left;
+   height: 30rem;
+   overflow-y: auto;
+   padding: 1em 1em;
+   grid-area: paragraph1;
+}
+
+.project-card__img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   grid-area: image;
+}
+
+.card .link-button {
+   margin: 0 auto var(--spacing-1);
+}
