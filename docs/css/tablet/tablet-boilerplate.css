@@ -108,6 +108,8 @@ img {
    text-align: center;
    border-radius: var(--spacing-2); /* Round the corners of the button */
    transition: background-color 0.3s ease; /* Add transition effect on hover */
+   width: fit-content;
+   margin: 0 auto;
 }
 
 .link-button:hover {
